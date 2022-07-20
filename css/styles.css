@@ -1,18 +1,17 @@
 :root {
-  --primary-text-color: #212121;
-  --title-text-color: #000000;
+  --primary-text-color: #757575;
+  --head-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --primaru-background: #f5f5f5;
   --hero-background-color: #2f303a;
   --button-background-color: #f5f4fa;
-  --portfolio-text-color: #757575;
+  --primary-background-color: #f5f5f5;
 }
 .body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
-  background-color: var(--primaru-background);
+  background-color: var(--primary-white-color);
 }
 
 /* Логотип верхний */
@@ -24,7 +23,7 @@
   line-height: 1.19;
 }
 .logo-black {
-  color: var(--title-text-color);
+  color: #000000;
 }
 /* убираем точки списков */
 .list {
@@ -40,23 +39,29 @@
 .list-header {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2%;
+  line-height: 2;
 }
 /* Подписи под заголовками */
 .list-text {
   font-size: 16px;
-  line-height: 1.87%;
+  line-height: 1.87;
 }
 
 /* Header */
-.header-nav-link,
+.header-nav-link {
+  color: var(--head-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .header-contakt-mail,
 .header-contakt-tel {
-  font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14%;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
@@ -69,10 +74,6 @@
   color: var(--accent-color);
 }
 
-.main {
-  font-family: Roboto, sans-serif;
-}
-
 /* Герой */
 .hero {
   background-color: var(--hero-background-color);
@@ -81,18 +82,14 @@
 
 /* Кнопка героя*/
 .hero-button {
-  font-family: Roboto, sans-serif;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   border: none;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87%;
-  text-align: center;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   padding: 32px 10px;
-  text-align: center;
-  text-decoration: none;
   margin: auto;
   display: block;
   font-size: 16px;
@@ -100,31 +97,28 @@
 }
 
 .hero-title {
-  font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36%;
-  text-align: center;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 /* Особенности */
-.list-pec {
-  font-family: Roboto, sans-serif;
-}
 
 .list-header {
+  color: var(--head-text-color);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14%;
+  line-height: 1.14;
   text-align: left;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .list-text {
   font-size: 14px;
-  line-height: 1.7%;
+  line-height: 1.7;
   text-align: left;
   letter-spacing: 0.03em;
 }
@@ -132,31 +126,25 @@
 /* Деятельность */
 
 /*-- Team -- */
-.team {
-  font-family: Roboto, sans-serif;
-}
-
 .team-header,
 .activity-header {
+  color: var(--head-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17%;
-  text-align: center;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 .team-item-header {
-  color: var(--primary-text-color);
+  color: var(--head-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19%;
-  text-align: center;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .team-item-text {
   color: var(--portfolio-text-color);
   font-size: 16px;
-  line-height: 1.19%;
-  text-align: center;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 /*-- Футер -- */
@@ -168,18 +156,27 @@
 }
 
 .address-list-item {
-  font-family: Roboto, sans-serif;
   color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   font-style: normal;
 }
 .address-list-mail {
-  font-family: Roboto, sans-serif;
   color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   font-style: normal;
 }
 .address-list-tel {
-  font-family: Roboto, sans-serif;
   color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   font-style: normal;
 }
 
@@ -196,16 +193,13 @@
 
 .radio {
   background-color: var(--button-background-color);
-  color: var(--primary-text-color);
+  color: var(--head-text-color);
   border: none;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63%;
-  text-align: center;
+  line-height: 1.63;
   letter-spacing: 0.03em;
   padding: 22px 6px;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
@@ -217,17 +211,17 @@
 }
 
 .portfolio-list-title {
-  color: var(--primary-text-color);
+  color: var(--head-text-color);
   font-weight: 700;
   font-size: 18px;
-  line-height: 2%;
+  line-height: 2;
   text-align: left;
   letter-spacing: 0.06em;
 }
 .portfolio-list-text {
   color: var(--portfolio-text-color);
   font-size: 16px;
-  line-height: 1.87%;
+  line-height: 1.87;
   text-align: left;
   letter-spacing: 0.03em;
 }
